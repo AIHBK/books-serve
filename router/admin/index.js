@@ -4,7 +4,7 @@ const adminMethods = require('../../router-methods/admin/methods');
 const router = express.Router();
 const upload = require('../../upload/upload');
 
-// 用户
+// 用户接口
 router.post('/login', adminMethods.Login); // 用户登陆
 router.post('/regUser', adminMethods.regUser); // 用户注册
 router.get('/usersData', adminMethods.getUsersData); // 获取用户信息
