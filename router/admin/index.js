@@ -12,7 +12,7 @@ router.post('/updataUser', adminMethods.updataUser); // 修改用户信息
 router.delete('/deleteUserData/:id', adminMethods.deleteUserData); // 删除用户信息
 router.post('/searchUser', adminMethods.searchUser); // 调价查询用户
 
-// 图书
+// 图书接口
 router.get('/booksData', adminMethods.getBooksData); // 获取图书
 router.delete('/deleteBooksData/:id', adminMethods.deleteBooksData);
 router.post('/upload', upload.single('file'), adminMethods.uploadFile); // 上传图书信息
